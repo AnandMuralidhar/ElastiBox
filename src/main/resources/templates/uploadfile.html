@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ElastiBox</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="/js/postrequest.js"></script>
+	<script src="/js/getrequest.js"></script>
+	<style>
+body{ font-family: Arial, Helvetica, sans-serif;background-color:cornflowerblue;}
+
+button[type=button] {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type=submit] {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=file] {
+    width: 100%;
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=button]:hover {
+    background-color: #6081c9;
+}
+button[type=submit]:hover {
+    background-color: #6081c9;
+}
+h1:hover{ 
+    color: blue;: 
+    }
+div {
+    border-radius: 15px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+</style>
+</head>
+ 
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5">
+				<h1>Upload to your ElastiBox storage</h1>
+				<hr>
+				<form method="POST" enctype="multipart/form-data" id="fileUploadForm">
+					<div class="form-group">
+						<label class="control-label" for="uploadfile">Upload File:</label>
+						<input type="file" class="form-control" id="uploadfile" placeholder="Upload File"  name="uploadfile"></input>
+					</div>					
+			        <button type="submit" class="btn btn-default" id="btnSubmit">Upload</button>
+			        <button type="button" class="btn btn-default" id="btnGetFiles">Files</button>
+				</form>
+				<hr/>
+				<div id="listFiles">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

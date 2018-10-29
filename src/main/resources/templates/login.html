@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>ElastiBox</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{ font-family: Arial, Helvetica, sans-serif;background-color:cornflowerblue;}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type=button] {
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+h1:hover{ 
+    color: blue;: 
+    }
+div {
+    border-radius: 15px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+</style>
+</head>
+<body>
+    <div>
+<form action= "/uploadfile">
+    <h1>Log in to ElastiBox</h1>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+     
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <a href="/index"><button type="button" class="cancel">Cancel</button></a>
+    <button type="submit" class="login">Log In</button>
+</form>
+</div>
+</body>
+</html>
